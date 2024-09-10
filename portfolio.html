@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="portfolio.css"/>
     <script src="portfolio.js" defer></script>
+    <script src="https://kit.fontawesome.com/1ec3559afd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="top">
@@ -15,19 +16,31 @@
             <button class="homeBtn">Home</button>
             <button class="aboutBtn">About</button>
         </div> 
+
+
     </div>
-    <div class="mid">
-        <div class="mid-container">
-            <div id="item1">Loremisquam porro voluptatem fugit repudiandae dicta. Placeat optio molestiae, similique vitae rerum veniam deleniti officiis corrupti eveniet ex quis porro.</div>
-            <div id="item2"> <img id="pic" src="Autumn.jpg" 
+    <section class="main">
+        <div class="mid">
+            <div class="mid-container">
+                <div id="item1">Loremisquam porro voluptatem fugit repudiandae dicta. Placeat optio molestiae, similique vitae rerum veniam deleniti officiis corrupti eveniet ex quis porro.</div>
+                <div id="item2"> <img id="pic" src="Autumn.jpg" 
                 width="440px" height="400px"></div>
 
-            <div id="item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste fugit tempore rem ab recusandae aperiam nisi provident illum quasi modi, soluta fuga pariatur, dicta velit quos perferendis ducimus beatae!</div>
-            <div id="item4"></div>
+                <div id="item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste fugit tempore rem ab recusandae aperiam nisi provident illum quasi modi, soluta fuga pariatur, dicta velit quos perferendis ducimus beatae!</div>
+                <div id="item4"></div>
+            </div>
         </div>
-        
-    </div>
+            <div class="mid-socials">
+            <button onclick="location.href='https://github.com/phoevo'"
+            id="linkedin" class="fa-brands fa-linkedin"></button>
+            <button id="email" class="fa-solid fa-envelope"></button>
+            <button id="github" class="fa-brands fa-github"></button>
+
+        </div>
+    </section>
     
+
+
     <div id = "box" class="box"></div>
 </body>
 </html>
