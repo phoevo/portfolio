@@ -8,7 +8,14 @@ document.addEventListener("DOMContentLoaded", function(){
     let githubBtn = document.querySelector("#github");
 
     workBtn.addEventListener("click", function(){
+        linkedinBtn.style.transform = "translateX(600px)";
+        emailBtn.style.transform = "translateX(600px)";
+        githubBtn.style.transform = "translateX(600px)";
         mid.style.transform = "translateX(2000px)";
+
+        linkedinBtn.style.transition= "300ms";
+        emailBtn.style.transition = "300ms";
+        githubBtn.style.transition="300ms";
         mid.style.transition = "700ms";
         setTimeout(() => {
             location.replace("portfolio-work.html")
@@ -16,7 +23,14 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 
     aboutBtn.addEventListener("click", function(){
+        linkedinBtn.style.transform = "translateX(-2000px)";
+        emailBtn.style.transform = "translateX(-2000px)";
+        githubBtn.style.transform = "translateX(-2000px)";
         mid.style.transform = "translateX(-2000px)";
+
+        linkedinBtn.style.transition= "300ms";
+        emailBtn.style.transition = "300ms";
+        githubBtn.style.transition="300ms";
         mid.style.transition = "700ms";
         setTimeout(() => {
             location.replace("portfolio-about.html")
@@ -30,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(){
     
     function Lhover(){ 
         linkedinBtn.className = "fa-solid fa-arrow-up-right-from-square";
-        linkedinBtn.style.width = "80px";
+        linkedinBtn.style.width = "70px";
         linkedinBtn.style.transition = "300ms";
     }
 
@@ -46,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function(){
     
     function Ehover(){ 
         emailBtn.className = "fa-solid fa-envelope-open";
-        emailBtn.style.height = "80px";
+        emailBtn.style.height = "70px";
         emailBtn.style.transition = "200ms";
     }
 
@@ -61,9 +75,10 @@ document.addEventListener("DOMContentLoaded", function(){
     
     function Ghover(){ 
         githubBtn.className = "fa-brands fa-github";
-        githubBtn.style.height = "80px";
-        githubBtn.style.width = "80px";
+        githubBtn.style.height = "70px";
+        githubBtn.style.width = "70px";
         githubBtn.style.transition = "200ms";
+        
     }
 
     function GhoverAfter(){  

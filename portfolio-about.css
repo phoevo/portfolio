@@ -30,23 +30,6 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.box{
-    width: 100px;
-    height: 100px;
-    opacity: 30%;
-    animation: spin 15s ease-in-out infinite;
-
-}
-
-@keyframes spin{
-    from{
-        transform: rotate (0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-    
-}
 
 .nav-buttons{
     margin-left: 290px;
@@ -84,6 +67,16 @@ h3{
     
 }
 
+/*-------------MIDDLE SECTION----------*/
+
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    
+}
+
 
 .mid{
     border: 2px solid red;
@@ -96,6 +89,85 @@ h3{
     
     
 }
+
+.mid-socials{
+    border: 2px solid white;
+    width: 200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.mid-socials button{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+}
+ 
+#linkedin{
+    font-size: 30px;
+    background-color: rgb(0, 114, 177);
+    border: none;
+    animation-name: linkedin;
+    animation-duration: 800ms;
+    animation-timing-function: ease;
+}
+@keyframes linkedin{
+    from{
+        opacity: 0;
+        /*transform: translateX(-2700px);*/
+    }
+    to{
+        opacity: 1;
+    }
+    }
+
+
+#email{
+    font-size: 30px;
+    background-color: rgb(177, 18, 18);
+    border: none;
+    animation-name: email;
+    animation-duration: 800ms;
+    animation-timing-function: ease;
+}
+@keyframes email{
+    from{
+        opacity: 0;
+        /*transform: translateX(-2700px);*/
+    }
+    to{
+        opacity: 1;
+    }
+    }
+
+
+
+
+#github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: rgb(110, 84, 148);
+    border: none;
+    animation-name: github;
+    animation-duration: 800ms;
+    animation-timing-function: ease;
+}
+@keyframes github{
+    from{
+        opacity: 0;
+        /*transform: translateX(-2700px);*/
+    }
+    to{
+        opacity: 1;
+    }
+    }
+
 
 
 .mid-container{
