@@ -2,12 +2,10 @@ body {
     background-color: rgba(1, 1, 35, 0.995);
     display: flex;
     flex-direction: column;
-   
 }
 
 .top{
     display: flex;
-
 }
 
 h3{
@@ -16,7 +14,6 @@ h3{
     justify-self: flex-start;
     margin-left: 200px;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 .nav-buttons{
@@ -67,7 +64,6 @@ section{
 
 
 .mid{
-    border: 2px solid red;
     display: flex;
     width: 60%;
     padding-top: 25px;
@@ -77,20 +73,20 @@ section{
 }
 
 .mid-socials{
-    border: 2px solid white;
-    width: 200px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    
+    gap: 40px;
+    padding-top: 10px;
 }
 
 .mid-socials button{
     height: 50px;
     width: 50px;
     border-radius: 40px;
+
 }
  
 #linkedin{
@@ -100,14 +96,16 @@ section{
     animation-name: linkedin;
     animation-duration: 500ms;
     animation-timing-function: ease;
+    
 }
 @keyframes linkedin{
     from{
         opacity: 0;
-        transform: translateX(700px);
+        transform: translateY(700px);
     }
     to{
         opacity: 1;
+        
     }
     }
 
@@ -124,7 +122,7 @@ section{
 @keyframes email{
     from{
         opacity: 0;
-        transform: translateX(700px);
+        transform: translateY(700px);
     }
     to{
         opacity: 1;
@@ -148,7 +146,7 @@ section{
 @keyframes github{
     from{
         opacity: 0;
-        transform: translateX(500px);
+        transform: translateY(500px);
     }
     to{
         opacity: 1;
@@ -159,26 +157,34 @@ section{
 .mid-container{
     display: grid;
     gap: 2%;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "item1 item1 item2 item2"
-    "item3 item3 item2 item2"
-    "item3 item3 item4 item4"
+    "item3 item4 item2 item2"
+    "item3 item4 item5 item5"
     ;
 }
 
 #item1{
     grid-area: item1;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    padding: 20px;
+    row-gap: 10px;
     background-color: rgb(20, 20, 90);
     animation-name: item1;
     animation-duration: 500ms;
     animation-timing-function: ease;
     border-radius: 8px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS'; 
     font-size: xx-large;
 }
+
+
 @keyframes item1{
 from{
     opacity: 0;
@@ -187,8 +193,22 @@ from{
 to{
     opacity: 1;
 }
+
 }
 
+#item1 em{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-style: normal;
+}
+#item1 i{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    font-size: medium;
+    font-style: normal;
+}
 
 #item2{
     grid-area: item2;
@@ -213,7 +233,7 @@ to{
 
 #pic{
     border-radius: 300px;
-    border: 2px solid white;
+    border: 1px solid white;
     animation-name: pic;
     animation:normal;
     animation-duration: 30s;
@@ -226,15 +246,18 @@ to{
 
 #item3{
     grid-area: item3;
+    display: flex;
+    padding-left: 30px;
+    font-family: 'Trebuchet MS';
+    font-size: larger;
+
     background-color: rgb(20, 30, 90);
     animation-name: item3;
     animation-duration: 700ms;
     animation-timing-function: ease;
     border-radius: 8px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
 }
+    
 @keyframes item3{
     from{
         opacity: 0;
@@ -245,6 +268,52 @@ to{
     }
 }
 
+.list1{ 
+    display: flex;
+    gap: 15px;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+.list1 h4{
+    font-size: xx-large;
+    font-family: 'Trebuchet MS';
+    color: white;
+}
+
+#item3 em{
+    color: palevioletred;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#html-logo{
+    color:#F06529;
+    font-size: 30px;
+}
+
+#css-logo{
+    color: #264de4;
+    font-size: 30px; 
+}
+
+#js-logo{
+    color: #f7df1e;
+    font-size: 30px;
+}
+
+#react-logo{
+    color:#61dbfb;
+    font-size: 30px;
+}
+
+#nodejs-logo{
+    color:#3c873a;
+    font-size: 30px;
+}
+
+
 #item4{
     grid-area: item4;
     background-color: rgb(20, 40, 90);
@@ -252,6 +321,8 @@ to{
     animation-duration: 900ms;
     animation-timing-function: ease;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 }
 @keyframes item4{
     from{
@@ -261,6 +332,39 @@ to{
     to{
         opacity: 1;
     }
+}
+
+#item4 h4{
+    font-size: xx-large;
+    font-family: 'Trebuchet MS';
+    color: white;
+    align-self: center;
+}
+
+#item5{
+    grid-area: item5;
+    background-color: rgb(0, 50, 90);
+    animation-name: item5;
+    animation-duration: 1100ms;
+    animation-timing-function: ease;
+    border-radius: 8px;
+}
+@keyframes item5{
+    from{
+        opacity: 0;
+        transform: translateY(1000px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.box{
+    border: 2px solid red;
+    width: 800px;
+    height: 800px;
+    animation-name: spin;
 }
 
 
