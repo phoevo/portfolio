@@ -94,7 +94,7 @@ section{
     background-color: rgb(0, 114, 177);
     border: none;
     animation-name: linkedin;
-    animation-duration: 500ms;
+    animation-duration: 1s;
     animation-timing-function: ease;
     
 }
@@ -116,7 +116,7 @@ section{
     background-color: rgb(177, 18, 18);
     border: none;
     animation-name: email;
-    animation-duration: 700ms;
+    animation-duration: 1100ms;
     animation-timing-function: ease;
 }
 @keyframes email{
@@ -140,7 +140,7 @@ section{
     background-color: rgb(110, 84, 148);
     border: none;
     animation-name: github;
-    animation-duration: 900ms;
+    animation-duration: 1200ms;
     animation-timing-function: ease;
 }
 @keyframes github{
@@ -212,7 +212,7 @@ to{
 
 #item2{
     grid-area: item2;
-    background-color: rgb( 10, 20, 90);
+    background-color: rgb( 10, 20, 70);
     animation-name: item2;
     animation-duration: 600ms;
     animation-timing-function: ease;
@@ -345,14 +345,14 @@ to{
     grid-area: item5;
     background-color: rgb(0, 50, 90);
     animation-name: item5;
-    animation-duration: 1100ms;
+    animation-duration: 1000ms;
     animation-timing-function: ease;
     border-radius: 8px;
 }
 @keyframes item5{
     from{
         opacity: 0;
-        transform: translateY(1000px);
+        transform: translateX(1000px);
     }
     to{
         opacity: 1;
@@ -360,11 +360,6 @@ to{
 }
 
 
-.box{
-    border: 2px solid red;
-    width: 800px;
-    height: 800px;
-    animation-name: spin;
-}
+
 
 
