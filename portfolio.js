@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", function(){
     let emailBtn = document.querySelector("#email");
     let githubBtn = document.querySelector("#github");
 
+    let livePreviewBtn = document.querySelector("#live-preview-rps");
+    let viewCodeBtn = document.querySelector("#view-code-rps");
+
+    let livePreviewDashBtn = document.querySelector("#live-preview-dashboard");
+    let viewCodeDashBtn = document.querySelector("#view-code-dashboard");
+
+
+
+
     workBtn.addEventListener("click", function(){
         linkedinBtn.style.transform = "translateX(600px)";
         emailBtn.style.transform = "translateX(600px)";
@@ -45,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function(){
     function Lhover(){ 
         linkedinBtn.className = "fa-solid fa-arrow-up-right-from-square";
         linkedinBtn.style.width = "70px";
-        linkedinBtn.style.transition = "300ms";
+        linkedinBtn.style.transition = "200ms";
     }
 
     function LhoverAfter(){  
@@ -87,6 +96,21 @@ document.addEventListener("DOMContentLoaded", function(){
         githubBtn.style.width = "50px";
     }   
 
+
+    livePreviewBtn.addEventListener("click", function(){
+        window.open("/projects/rock-paper-scissors/rock-paper-scissors/rock-paper-scissors.html")
+    })
+    viewCodeBtn.addEventListener("click", function(){
+        window.open("https://github.com/phoevo/rock-paper-scissors")
+    })
+
+    
+    livePreviewDashBtn.addEventListener("click", function(){
+        window.open("/projects/dashboard/dashboard.html")
+    })
+    viewCodeDashBtn.addEventListener("click", function(){
+        window.open("https://github.com/phoevo/dashboard")
+    })
 
 
 

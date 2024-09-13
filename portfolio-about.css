@@ -162,8 +162,8 @@ section{
     margin-left: 10%;
     display: grid;
     gap: 4%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 150px 150px;
     grid-template-areas: 
     "item1 item2" 
     "item3 item4"
@@ -177,10 +177,15 @@ section{
     animation-name: item1;
     animation-duration: 500ms;
     animation-timing-function: ease;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
     border-radius: 8px;
+    border-left: 4px solid rgb(255, 255, 255);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
+    font-size: large;
 }
 @keyframes item1{
 from{
@@ -192,10 +197,19 @@ to{
 }
 }
 
+#title em{
+    font-style: normal;
+    opacity: 50%;
+}
+#date{
+    font-size: smaller;
+    opacity: 50%;
+}
+
 
 #item2{
     grid-area: item2;
-    background-color: rgb( 10, 20, 90);
+    background-color: rgb( 20, 20, 90);
     animation-name: item2;
     animation-duration: 600ms;
     animation-timing-function: ease;
