@@ -6,9 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let linkedinBtn = document.querySelector("#linkedin");
     let emailBtn = document.querySelector("#email");
     let githubBtn = document.querySelector("#github");
-    let resumeBtn = document.querySelector("#resumeBtn");
-
-
+    
 /*--------------PAGE CHANGE FUNCTIONALITY--------------*/
     workBtn.addEventListener("click", function(){
         linkedinBtn.style.transform = "translateX(600px)";
@@ -24,24 +22,9 @@ document.addEventListener("DOMContentLoaded", function(){
             location.replace("portfolio-work.html")
         }, 200);
     })
-/*--------------PAGE CHNAGE FUNCTIONALITY--------------*/
-    aboutBtn.addEventListener("click", function(){
-        linkedinBtn.style.transform = "translateX(-2000px)";
-        emailBtn.style.transform = "translateX(-2000px)";
-        githubBtn.style.transform = "translateX(-2000px)";
-        mid.style.transform = "translateX(-2000px)";
 
-        linkedinBtn.style.transition= "300ms";
-        emailBtn.style.transition = "300ms";
-        githubBtn.style.transition="300ms";
-        mid.style.transition = "700ms";
-        setTimeout(() => {
-            location.replace("portfolio-about.html")
-        }, 200);
 
-    })
-
-/*--------------LINKED IN FUNCTIONALITY--------------*/
+/*--------------LINKEDIN FUNCTIONALITY--------------*/
     linkedinBtn.addEventListener("mouseover", Lhover, false);
     linkedinBtn.addEventListener("mouseout", LhoverAfter, false);
     
@@ -61,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
   
-
 /*--------------EMAIL FUNCTIONALITY--------------*/
+
     emailBtn.addEventListener("mouseover", Ehover, false);
     emailBtn.addEventListener("mouseout", EhoverAfter, false);
     
@@ -96,12 +79,8 @@ document.addEventListener("DOMContentLoaded", function(){
         githubBtn.style.width = "50px";
     }   
 
-/*--------------RESUME FUNCTIONALITY--------------*/
-    resumeBtn.addEventListener("click", function(){
-        window.open("/Images/Resume .pdf")
-    })
-    
- 
+
+        
 })
 
 

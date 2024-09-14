@@ -174,7 +174,7 @@ section{
     animation-timing-function: ease;
     border-radius: 8px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS';
     font-size: large;
     
     display: grid;
@@ -262,7 +262,7 @@ to{
     border-radius: 8px;
     display: flex;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS';
     font-size: large;
 
     display: grid;
@@ -286,22 +286,6 @@ to{
 
 #dashboard-screenshot{
     border-radius: 5px;;
-}
-
-
-#html-logo{
-    color:#F06529;
-    font-size: 20px;
-}
-
-#css-logo{
-    color: #264de4;
-    font-size: 20px; 
-}
-
-#js-logo{
-    color: #f7df1e;
-    font-size: 20px;
 }
 
 

@@ -66,7 +66,6 @@ section{
 
 
 .mid{
-    border: 2px solid red;
     display: flex;
     width: 60%;
     padding-top: 25px;
@@ -78,7 +77,7 @@ section{
 }
 
 .mid-socials{
-    border: 2px solid white;
+    
     width: 200px;
     height: 500px;
     display: flex;
@@ -162,8 +161,8 @@ section{
     margin-left: 10%;
     display: grid;
     gap: 4%;
-    grid-template-columns: 1.5fr 0.5fr;
-    grid-template-rows: 150px 150px;
+    grid-template-columns: 1.8fr 0.5fr;
+    grid-template-rows: 180px 180px 150px;
     grid-template-areas: 
     "item1 item2" 
     "item3 item4"
@@ -184,7 +183,7 @@ section{
     border-radius: 8px;
     border-left: 4px solid rgb(255, 255, 255);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS';
     font-size: large;
 }
 @keyframes item1{
@@ -228,18 +227,6 @@ to{
     }
 }
 
-#pic{
-    border-radius: 300px;
-    border: 2px solid white;
-    animation-name: pic;
-    animation:normal;
-    animation-duration: 30s;
-    animation-timing-function: ease;
-}
-@keyframes pic{
-    
-
-}
 
 #item3{
     grid-area: item3;
@@ -247,10 +234,14 @@ to{
     animation-name: item3;
     animation-duration: 600ms;
     animation-timing-function: ease;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
     border-radius: 8px;
+    border-left: 4px solid rgb(255, 255, 255);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
+    font-family: 'Trebuchet MS';
+    font-size: large;
 }
 @keyframes item3{
     from{
@@ -286,7 +277,14 @@ to{
     animation-name: item4;
     animation-duration: 700ms;
     animation-timing-function: ease;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
     border-radius: 8px;
+    border-left: 4px solid rgb(255, 255, 255);
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-size: large;
 }
 @keyframes item5{
     from{
@@ -296,6 +294,10 @@ to{
     to{
         opacity: 1;
     }
+}
+
+#item5 #date{
+    font-size: 15px;
 }
 
 #item6{

@@ -1,30 +1,18 @@
 document.addEventListener("DOMContentLoaded", function(){
 
     let mid = document.querySelector(".mid");
-    let workBtn = document.querySelector(".workBtn");
     let aboutBtn = document.querySelector(".aboutBtn");
     let linkedinBtn = document.querySelector("#linkedin");
     let emailBtn = document.querySelector("#email");
     let githubBtn = document.querySelector("#github");
-    let resumeBtn = document.querySelector("#resumeBtn");
+    
+    let livePreviewBtn = document.querySelector("#live-preview-rps");
+    let viewCodeBtn = document.querySelector("#view-code-rps");
 
+    let livePreviewDashBtn = document.querySelector("#live-preview-dashboard");
+    let viewCodeDashBtn = document.querySelector("#view-code-dashboard");
 
 /*--------------PAGE CHANGE FUNCTIONALITY--------------*/
-    workBtn.addEventListener("click", function(){
-        linkedinBtn.style.transform = "translateX(600px)";
-        emailBtn.style.transform = "translateX(600px)";
-        githubBtn.style.transform = "translateX(600px)";
-        mid.style.transform = "translateX(2000px)";
-
-        linkedinBtn.style.transition= "300ms";
-        emailBtn.style.transition = "300ms";
-        githubBtn.style.transition="300ms";
-        mid.style.transition = "700ms";
-        setTimeout(() => {
-            location.replace("portfolio-work.html")
-        }, 200);
-    })
-/*--------------PAGE CHNAGE FUNCTIONALITY--------------*/
     aboutBtn.addEventListener("click", function(){
         linkedinBtn.style.transform = "translateX(-2000px)";
         emailBtn.style.transform = "translateX(-2000px)";
@@ -41,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     })
 
-/*--------------LINKED IN FUNCTIONALITY--------------*/
+/*--------------LINKEDIN FUNCTIONALITY--------------*/
     linkedinBtn.addEventListener("mouseover", Lhover, false);
     linkedinBtn.addEventListener("mouseout", LhoverAfter, false);
     
@@ -96,12 +84,27 @@ document.addEventListener("DOMContentLoaded", function(){
         githubBtn.style.width = "50px";
     }   
 
-/*--------------RESUME FUNCTIONALITY--------------*/
-    resumeBtn.addEventListener("click", function(){
-        window.open("/Images/Resume .pdf")
+/*-------------------WORK VIEWING FUNCTIONALITY--------------*/
+
+   livePreviewBtn.addEventListener("click", function(){
+        window.open("/projects/rock-paper-scissors/rock-paper-scissors/rock-paper-scissors.html")
     })
+
+    viewCodeBtn.addEventListener("click", function(){
+        window.open("https://github.com/phoevo/rock-paper-scissors")
+    })
+
     
- 
+    livePreviewDashBtn.addEventListener("click", function(){
+        window.open("/projects/dashboard/dashboard.html")
+    })
+
+    viewCodeDashBtn.addEventListener("click", function(){
+        window.open("https://github.com/phoevo/dashboard")
+    })
+
+    
+   
 })
 
 
