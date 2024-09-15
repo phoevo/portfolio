@@ -96,6 +96,10 @@ document.addEventListener("DOMContentLoaded", function(){
         githubBtn.style.width = "50px";
     }   
 
+    githubBtn.addEventListener("click", function(){
+        window.open("https://github.com/phoevo")
+    })
+
 /*--------------RESUME FUNCTIONALITY--------------*/
     resumeBtn.addEventListener("click", function(){
         window.open("/Images/Resume .pdf")
