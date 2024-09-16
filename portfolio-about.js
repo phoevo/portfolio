@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let mid = document.querySelector(".mid");
     let workBtn = document.querySelector(".workBtn");
-    let aboutBtn = document.querySelector(".aboutBtn");
     let linkedinBtn = document.querySelector("#linkedin");
     let emailBtn = document.querySelector("#email");
     let githubBtn = document.querySelector("#github");
@@ -78,6 +77,10 @@ document.addEventListener("DOMContentLoaded", function(){
         githubBtn.style.height = "50px";
         githubBtn.style.width = "50px";
     }   
+
+    githubBtn.addEventListener("click", function(){
+        window.open("https://github.com/phoevo")
+    })
 
 
         

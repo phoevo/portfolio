@@ -84,6 +84,10 @@ document.addEventListener("DOMContentLoaded", function(){
         githubBtn.style.width = "50px";
     }   
 
+    githubBtn.addEventListener("click", function(){
+        window.open("https://github.com/phoevo")
+    })
+
 /*-------------------WORK VIEWING FUNCTIONALITY--------------*/
 
    livePreviewBtn.addEventListener("click", function(){
