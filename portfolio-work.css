@@ -11,6 +11,39 @@ body {
     
 }
 
+#disclaimer{ 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color:rgb(255, 200, 200);
+    border: 5px solid rgb(255, 100, 100);
+    border-radius: 10px;
+    width: 270px;
+    height: 100px;
+    color: black;
+    position: absolute;
+    left: 30px;
+    opacity: 20%;
+    animation-name: disclaimer;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    
+}
+
+
+#disclaimer i{
+    display: flex;
+    font-size: 2rem;
+    padding-left: 30px;
+    color: rgb(255, 100, 100);;
+}
+
+#disclaimer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+}
+
+
 .nav-buttons{
     display: flex;
     justify-content: center;

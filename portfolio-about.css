@@ -151,7 +151,7 @@ section{
     gap: 10px;
     overflow: hidden;
     grid-template-columns: 1.8fr 0.5fr;
-    grid-template-rows: 200px 200px 15em;
+    grid-template-rows: 200px 200px 200px;
     grid-template-areas: 
     "item1 item2" 
     "item3 item4"
