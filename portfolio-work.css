@@ -23,11 +23,19 @@ body {
     color: black;
     position: absolute;
     left: 30px;
-    opacity: 20%;
+    opacity: 30%;
     animation-name: disclaimer;
-    animation-duration: 10s;
+    animation-duration: 1s;
     animation-timing-function: ease;
-    
+}
+
+@keyframes disclaimer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: .3;
+    }
 }
 
 
